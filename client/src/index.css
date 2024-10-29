@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: rgb(14, 13, 20);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color:rgb(16, 15, 22); /* Background color of the header */
+  padding: 0 80px;
+  margin: 0 0; /* Spacing inside the header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff; /* Text color */
+  font-family: 'Poppins', sans-serif;
+  font-size: larger;
+  font-weight: 200;
+  box-shadow: 200ms;
+  border: 3px solid rgb(1, 0, 0); 
+  /* position: fixed;
+  width: 100%; */
+}
+
+.logo img {
+  padding: 10;
+  margin: 10;
+  width: 90px; 
+  height: 60px;
+}
+
+ nav ul {
+  list-style-type: none; 
+  padding: 0;
+  display: flex;
+}
+
+ nav li {
+  margin-right: 20px;
+  
+} 
+
+.widgetcontainer{
+  /* border: 1px solid black; */
+  /* margin: 0rem; */
+  padding: 0rem 0rem;
+  text-align: center;
+}
+
+.tradingwidget{
+    display: inline-block;
+  /* border: 1px solid rgb(1, 0, 0); */
+  padding: 1rem 1rem;
+  vertical-align: middle;
+    
+}
+ .news{
+      display: flex;
+      padding: 0 0 ;
+      margin: 0 0 ;
+      grid-row:auto;
+      border: 2px solid rgb(1, 0, 0); 
+ }
+
+ .list:hover{
+  transform: scale(1.3)
+ }
+
+ .logo:hover{
+  transform: scale(1.1)
+ }
+
+ .list{
+  color: aliceblue;
+ }
+
+ .heading{
+  color: aliceblue;
+  padding-left: 80px;
+  margin-top: 20px;
+  font-size:x-large;
+  font-weight: 700;
+ }
