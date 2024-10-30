@@ -8,6 +8,7 @@ import Profile from "./pages/Profile";
 import Products from "./pages/Products";
 import Courses from "./pages/Courses";
 import Footer from "./components/Footer";
+import PrivateRoute from "./components/PrivateRoute";
 
 export default function App() {
 
@@ -19,9 +20,13 @@ export default function App() {
             <Route path='/sign-in' element={<Signin />} />
             <Route path='/sign-up' element={<SignUp />} />
             <Route path='/about' element={<About />} />
-            <Route path='/profile' element={<Profile />} />
             <Route path="/Products" element={<Products/>} />
             <Route path="/Courses" element={<Courses/>} />
+
+            <Route element={<PrivateRoute />}>
+              <Route path='/profile' element={<Profile />} />
+            </Route>
+
         </Routes>
         <Footer/>
     </BrowserRouter>
