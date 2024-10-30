@@ -4,11 +4,11 @@ import Home from "./components/Home";
 import About from "./pages/About";
 import Signin from "./pages/Signin";
 import SignUp from "./pages/SignUp";
+import PrivateRoute from "./components/PrivateRoute";
 import Profile from "./pages/Profile";
 import Products from "./pages/Products";
 import Courses from "./pages/Courses";
 import Footer from "./components/Footer";
-import PrivateRoute from "./components/PrivateRoute";
 
 export default function App() {
 
