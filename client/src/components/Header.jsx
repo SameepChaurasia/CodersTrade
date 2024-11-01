@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import News from "../pages/News";
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 
 export default function Header () {
-  const { currentUser } = useSelector((state) => state.user);
+  // const { currentUser } = useSelector((state) => state.user);
   return (
   <div>
     <News/>
@@ -16,9 +16,9 @@ export default function Header () {
         </Link>
       </div>
 
-        <form className="bg-slate-600 p-1 m-2 rounded-2xl flex items-center" >
-            <input type='text' placeholder="Search..." className="bg-transparent focus:outline-none w-80" />
-            <FaSearch className="bg-slate-600"/>
+        <form className="bg-gradient-to-r from-cyan-200 to-blue-300 p-1 m-2 rounded-2xl flex items-center ring-2 ring-blue-800" >
+            <input type='text' placeholder="Search..." className="bg-transparent text-gray-800  focus:outline-none w-80" />
+            <FaSearch className="bg-gradient-to-r from-cyan-300 to-blue-300"/>
         </form>
 
      
@@ -35,19 +35,11 @@ export default function Header () {
             </li>
           </Link>
 
-          <Link to='/Products'>
-            <li className="list">
-              Products
-            </li>
-          </Link>
+          <li className="list">
+            Login
+          </li>
 
-          <Link to='/Courses'>
-            <li className="list">
-              Courses
-            </li>
-          </Link>
-
-          <Link to='/profile'>
+          {/* <Link to='/sign-in'>
             {currentUser ? (
               <img
                 className='rounded-full h-7 w-7 object-cover'
@@ -57,7 +49,7 @@ export default function Header () {
             ) : (
               <li className=' text-slate-100 hover:underline'> Sign in</li>
             )}
-          </Link>
+          </Link> */}
 
         </ul>
 

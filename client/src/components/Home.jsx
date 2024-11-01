@@ -10,20 +10,17 @@ export default function Home () {
 
        <div>
             <h1 className="heading">Market View🗺️</h1>
-            <div className="widgetcontainer">
-            <div className="tradingwidget">
-              <TradingViewWidget/>
-              {/* <TableNews/> */}
-            </div>
-            <div className="tradingwidget">
-              {/* <TradingViewWidget/> */}
-              <TableNews/>
-            </div>
-            </div>
-        </div>
-       
-        <div>
-          <AboutStocks/>
+                  <div className="widgetcontainer">
+                  <div className="tradingwidget">
+                    <TradingViewWidget/>
+                    {/* <TableNews/> */}
+                  </div>
+                  <div className="tradingwidget">
+                    {/* <TradingViewWidget/> */}
+                    <TableNews/>
+                  </div>
+                  </div>
+            <AboutStocks/>
         </div>
 
     </div>
